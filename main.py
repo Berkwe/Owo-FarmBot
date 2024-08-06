@@ -1,5 +1,5 @@
 
-import discord, time, random, asyncio, os, json, subprocess
+import discord, time, random, asyncio, os, json
 from discord.ext import commands
 
 settingsJs = """{
@@ -9,14 +9,15 @@ settingsJs = """{
 "Oynanacak_Sunucunun_idsi": "",
 "Komutlara_erişimi_olan_hesabın_idsi": ""
 }"""
-dir_path = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(dir_path, "settings.json")
-if not os.path.exists(file_path):
-    with open(file_path, "w", encoding="utf-8") as f:
+
+
+if not os.path.exists("settings.json"):
+    with open("settings.json", "w", encoding="utf-8") as f:
         f.write(settingsJs)
     raise ValueError("Settings.json dosyası bulunamadığı için bir tane oluşturuldu. Lütfen bilgilerinizi doğru ve EKSİKSİZ şekilde girin.")
 
-with open(file_path, "r", encoding="utf-8") as f:
+
+with open("settings.json", "r", encoding="utf-8") as f:
     settings = json.load(f)
 
 import DiscordClient
