@@ -44,10 +44,10 @@ Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmışt
 
 ## Kurulum Adımları
 1. **Exe'yi indirin:**
-   [Owo self-bot.exe](https://github.com/Berkwe/Audio-converter/releases/download/1.0/AudioConverter.exe)
+   [Owo self-bot.exe](https://github.com/Berkwe/Owo-SelfBot/releases/download/1.0/OwO.SelfBot.exe)
 3. **Herhangi bir klasöre aktarın.**
 4. **Çift tıklayıp çalıştırın. Bot, sizin için settings.json adında ayarlar dosyası oluşturacak.**
-5. **Ayarları yapılandnırın, [Yapılandırma](https://github.com/Berkwe/Audio-converter/releases/download/1.0/AudioConverter.exe)**
+5. **Ayarları yapılandırın, [Yapılandırma](https://github.com/Berkwe/Owo-SelfBot#ayarlar)**
 6. **Hazırsınız. Programı çalıştırıp discord üzerinden komutlarla kontrol edebilirsiniz.**
 
 ## 🐍 Python Şeklinde:
@@ -60,7 +60,7 @@ Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmışt
 
 1. ### Projeyi indirme:
 
-   - **[Zip](https://github.com/Berkwe/Audio-converter/archive/refs/heads/main.zip)'i indirin**
+   - **[Zip](https://github.com/Berkwe/Owo-SelfBot/archive/refs/heads/main.zip)'i indirin**
      ### **Veya**
    - **Git ile klonlayın:**
    ```bash
