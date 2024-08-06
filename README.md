@@ -3,6 +3,7 @@
 ## 📜 Açıklama
 
 Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmıştır. Bot, belirtilen sunucuda otomatik olarak coinflip oynayarak, belirli bir para miktarı ile başlar. Para miktarı her kaybedildiğinde ikiye katlanır ve doğru miktar girildiğinde matematiksel olarak 0.5 kaybetme olasılığı ile para kasar. Ayrıca çeşitli koruma ve yönetim işlevlerine de sahiptir.
+**[Sıkıcı yerleri geç](https://github.com/Berkwe/Owo-SelfBot#kurulum-ad%C4%B1mlar%C4%B1)(lütfen geçme :3)**
 
 ## 🚀 Özellikler
 
