@@ -14,9 +14,9 @@ Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmışt
 - **Komutlar:** Botun çeşitli işlevlerini kontrol eden komutlar sağlar.
 
 ## ⚠️ NOT
- - ** Bu botun kullanımından oluşabilecek tüm sorumluluk kullanıcıya aittir. Ayrıca test aşamasındadır, eğer bir hata tespit ederseniz lütfen github veya iletişim kısmından iletin.**
- - ** Botun kaynak kodu düzenli değildir, başta son kullanıcı hedeflenmediğinden sadece kendimin anlayabileceği şekilde yazmıştım. Kaynak kodu karışık olabilir.**
- - ** Botu kullanmak için ayrıca farklı bir discord botu oluşturmanız gerekecek. Neyseki bu çok basit! [Şuradan](https://youtu.be/xc_0Mv11FLA?si=WuLxgIEpuTohV5nY) bir youtube videosuna ulaşabilirsiniz.**
+ - **Bu botun kullanımından oluşabilecek tüm sorumluluk kullanıcıya aittir. Ayrıca test aşamasındadır, eğer bir hata tespit ederseniz lütfen github veya iletişim kısmından iletin.**
+ - **Botun kaynak kodu düzenli değildir, başta son kullanıcı hedeflenmediğinden sadece kendimin anlayabileceği şekilde yazmıştım. Kaynak kodu karışık olabilir.**
+ - **Botu kullanmak için ayrıca farklı bir discord botu oluşturmanız gerekecek. Neyseki bu çok basit! [Şuradan](https://youtu.be/xc_0Mv11FLA?si=WuLxgIEpuTohV5nY) bir youtube videosuna ulaşabilirsiniz.**
 
 ## 🛠️ Kurulum
 
