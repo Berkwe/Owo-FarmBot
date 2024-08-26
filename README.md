@@ -6,7 +6,7 @@ Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmışt
 **[Sıkıcı yerleri geç](https://github.com/Berkwe/Owo-SelfBot#kurulum-ad%C4%B1mlar%C4%B1)(lütfen geçme :3)**
 
 ## 🚀 Özellikler
-
+- **Tamamen requestler üzerinde yapıldığından, python çalıştıran herhangi bir makinada(termux, kali, windows cmd vb.) kullanılabilmekterdir.**
 - **Otomatik İşlem:** Başlangıç miktarı ile `owo cf` komutunu gönderir ve işlemleri otomatik olarak yürütür.
 - **Captcha Koruması:** Captcha tespit edildiğinde botu geçici olarak durdurur ve kullanıcıyı bilgilendirir.
 - **Otomatik Pray:** Eğer istenirse her 5 dakikada bir `owo pray` komutunu gönderir.
@@ -87,7 +87,7 @@ Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmışt
    - **Örnek doldurma:**
      ```json
      {
-       "Botun_Tokeni": "yJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6InRyLVRSIiwiYnJvd3Nlcl91", 
+       "Oluşturduğunuz_discord_Botunun_Tokeni": "yJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6InRyLVRSIiwiYnJvd3Nlcl91", 
        "Oynanacak_Hesabınızın_Tokeni": "yJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6InRyLVRSIiwiYnJvd3Nlcl91",
        "Oynanacak_Kanalın_İdsi": "1145599685621461093",
        "Oynanacak_Sunucunun_idsi": "807266252191170561",
@@ -96,7 +96,7 @@ Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmışt
      ```
      
 ## 📜 Komutlar
-
+- **Komutlar discord üzerinden botun oynanıdğı kanalda, Manager id ile belirtilen kullanıcı tarafından kullanılabilir.**
 - `-randoms aç/kapa` - Random mesajları açar veya kapatır.
 - `-durdur` - Botu dondurur.
 - `-başlat` - Botu devam ettirir.
@@ -110,7 +110,7 @@ Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmışt
 ## ⚙️ Kullanım
 
 1. **Botu Başlatma:**
-   - Botu başlatmak için terminalde şu komutu çalıştırın:
+   - Ayarları hallettiyseniz, Botu başlatmak için terminalde şu komutu çalıştırın:
      ```bash
      python bot.py
      ```
