@@ -79,6 +79,8 @@ cashControlVal = 0
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix=prefix, intents=intents, )
+# For Client Login
+     
 
 
 async def main():
@@ -153,13 +155,29 @@ async def on_disconnect():
     await main_task
 
 
+
 @bot.event
 async def on_ready():
     global user, bot_channel, main_task
+    try:
+        await bot.fetch_guild(server_id)
+    except discord.errors.NotFound:
+        print("KRİTİK HATA : bot sunucuda değil veya sunucu idsi hatalı.")
+        return
+    try:
+        await bot.fetch_channel(channel)
+    except discord.errors.Forbidden:
+        print("KRİTİK HATA : Botun belirtilen kanala erişimi yok.")
+        return
+    except discord.errors.NotFound:
+        print("KRİTİK HATA : Verilen kanal idsi yanlış")
+        return
+    if await DiscordClient.ClientLogin(bot) == "nope":
+        print("KRİTİK HATA : Girilien kullanıcı tokeni hatalı, tokenininizi öğrenmek istiyorsanız youtubeden basitce nasıl bulacağınızı öğrenebilrisiniz.")
+        return
     activity = discord.Activity(
         type=discord.ActivityType.watching, name="Pornhub")
     await bot.change_presence(activity=activity)
-    await DiscordClient.ClientLogin(bot)
     user = await bot.fetch_user(manager_id)
     bot_channel = bot.get_channel(channel)
     main_task = asyncio.create_task(main())
@@ -566,4 +584,7 @@ async def on_message_edit(before, after):
     
 
 if __name__ == "__main__":
-    bot.run(TOKEN)
+    try:
+        bot.run(TOKEN)
+    except discord.errors.LoginFailure:
+        print("Discord bot tokeni geçersiz.")
