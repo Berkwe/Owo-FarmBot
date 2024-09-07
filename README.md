@@ -45,7 +45,7 @@ Bu proje, Discord üzerindeki OWO botunda otomatik OWO kasmak için yapılmışt
 
 ## Kurulum Adımları
 1. **Exe'yi indirin:**
-   [Owo self-bot.exe](https://github.com/Berkwe/Owo-SelfBot/releases/download/1.0/OwO.SelfBot.exe)
+   [OwO Farm-Bot.exe](github.com/Berkwe/Owo-FarmBot/releases/latest/download/Owo.Farm-bot.exe)
 3. **Herhangi bir klasöre aktarın.**
 4. **Çift tıklayıp çalıştırın. Bot, sizin için settings.json adında ayarlar dosyası oluşturacak.**
 5. **Ayarları yapılandırın, [Yapılandırma](https://github.com/Berkwe/Owo-SelfBot#ayarlar)**
