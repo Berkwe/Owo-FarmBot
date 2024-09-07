@@ -1,4 +1,3 @@
-
 import discord, time, random, asyncio, os, json
 from discord.ext import commands
 
