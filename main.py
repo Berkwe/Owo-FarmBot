@@ -1,6 +1,8 @@
 import discord, time, random, asyncio, os, json
 from discord.ext import commands
 
+# Coded by berkwe_
+
 settingsJs = """{
 "Botun_Tokeni": "",
 "Oynanacak_Hesabınızın_Tokeni": "",
