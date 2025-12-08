@@ -1,7 +1,6 @@
+
 import discord, time, random, asyncio, os, json
 from discord.ext import commands
-
-# Coded by berkwe_
 
 settingsJs = """{
 "Botun_Tokeni": "",
@@ -28,11 +27,11 @@ TOKEN = settings["Botun_Tokeni"]
 # SELF TOKEN
 selfToken = settings["Oynanacak_Hesabınızın_Tokeni"]
 # OWO Channel id
-channel = int(settings["Oynanacak_Kanalın_İdsi"])
+channel = settings["Oynanacak_Kanalın_İdsi"]
 # OWO Server İD
-server_id = int(settings["Oynanacak_Sunucunun_idsi"])
+server_id = settings["Oynanacak_Sunucunun_idsi"]
 # Manager id
-manager_id = int(settings["Komutlara_erişimi_olan_hesabın_idsi"])
+manager_id = settings["Komutlara_erişimi_olan_hesabın_idsi"]
 
 # Settings #
 
@@ -63,6 +62,7 @@ lst = ["owo battle", "ehue", "hebele", "rastgele", "kelimeler",
 isBotRunning = True
 currentlyTime = int(time.time())
 isPause = False
+isPrayMode = False
 isCont = True
 won = False
 # OWO Bot id
