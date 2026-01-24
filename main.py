@@ -1,4 +1,3 @@
-
 import discord, time, random, asyncio, os, json
 from discord.ext import commands
 
@@ -10,6 +9,7 @@ settingsJs = """{
 "Komutlara_erişimi_olan_hesabın_idsi": ""
 }"""
 
+# Coded by berkwe_
 
 if not os.path.exists("settings.json"):
     with open("settings.json", "w", encoding="utf-8") as f:
@@ -22,16 +22,19 @@ with open("settings.json", "r", encoding="utf-8") as f:
 
 import DiscordClient
 
-# BOT Token
-TOKEN = settings["Botun_Tokeni"]
-# SELF TOKEN
-selfToken = settings["Oynanacak_Hesabınızın_Tokeni"]
-# OWO Channel id
-channel = settings["Oynanacak_Kanalın_İdsi"]
-# OWO Server İD
-server_id = settings["Oynanacak_Sunucunun_idsi"]
-# Manager id
-manager_id = settings["Komutlara_erişimi_olan_hesabın_idsi"]
+try:
+    # BOT Token
+    TOKEN = settings["Botun_Tokeni"]
+    # SELF TOKEN
+    selfToken = settings["Oynanacak_Hesabınızın_Tokeni"]
+    # OWO Channel id
+    channel = int(settings["Oynanacak_Kanalın_İdsi"])
+    # OWO Server İD
+    server_id = int(settings["Oynanacak_Sunucunun_idsi"])
+    # Manager id
+    manager_id = int(settings["Komutlara_erişimi_olan_hesabın_idsi"])
+except TypeError:
+    print("Settings.json dosyasındaki bilgilerin bazıları veya hepsi yanlış")
 
 # Settings #
 
@@ -67,6 +70,7 @@ isCont = True
 won = False
 # OWO Bot id
 bot_id = 408785106942164992
+
 # İf losing streak
 losingStreak = 0
 # For cooldown
@@ -530,8 +534,7 @@ async def on_message(message):
 @bot.event
 async def on_message_edit(before, after):
     global won, isCont, losingStreak, main_task, hebele, cfValue, amount, isPause, cashControlVal, owoPray, prayTime
-    if after.author.id == bot_id and after.channel.id == channel:
-
+    if int(after.author.id) == bot_id and int(after.channel.id) == channel:
         if "you won" in after.content:
             won = True
             cashControlVal += (amount//2) if cashControlVal != 0 else defaultAmount
