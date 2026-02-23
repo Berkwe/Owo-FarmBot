@@ -1,3 +1,4 @@
+# ⚠️ FİXLENMİŞ/DESTEĞİ KESİLMİŞTİR
 # 🤖 OwO Farm Bot 🤖
 
 ## 📜 Açıklama
